@@ -2,7 +2,7 @@ library(tidyverse)
 
 
 
-# Function To Create a Tile
+# Create An S3 Object Tile Class
 create_s3_tile <- function(col, num) {
   
   # Validate The Tile Information
