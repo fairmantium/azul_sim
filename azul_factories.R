@@ -47,7 +47,7 @@ f3$slot4 <- s3_4
 
 # Create an S4 Factory Object
 f4 <- create_s4_factory(num = 1)
-# Place 4 Slots Into Factory
+# Create 4 S4 Slots Into Factory
 s4_1 <- create_s4_slot(num = 1)
 s4_2 <- create_s4_slot(num = 2)
 s4_3 <- create_s4_slot(num = 3)
