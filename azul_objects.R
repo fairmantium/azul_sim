@@ -49,6 +49,8 @@ create_s4_tile <- function(col, num) {
   
 }
 
+# Create an S3 Tile Object
 t3 <- create_s3_tile(col = "black", num = 11)
-t4 <- create_s4_tile(col = "blue", num = 1)
 
+# Create an S4 Tile Object
+t4 <- create_s4_tile(col = "blue", num = 1)
