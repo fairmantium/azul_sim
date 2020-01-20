@@ -1,7 +1,3 @@
-library(tidyverse)
-
-
-
 # Create An S3 Object Tile Class
 create_s3_tile <- function(col, num) {
   
@@ -19,6 +15,7 @@ create_s3_tile <- function(col, num) {
     
   } else {
     
+    # Error Message If Bad Values Are Passed
     stop("Color and number are not validated.")
     
   }
@@ -27,7 +24,7 @@ create_s3_tile <- function(col, num) {
 
 
 
-# Create An S4 Object Class
+# Create An S4 Object Tile Class
 setClass("tile", slots = list(color = "character", number = "numeric"))
 
 # Function To Create a Tile
@@ -43,6 +40,7 @@ create_s4_tile <- function(col, num) {
     
   } else {
     
+    # Error Message If Bad Values Are Passed
     stop("Color and number are not validated.")
     
   }
