@@ -17,7 +17,7 @@ create_s4_factory <- function(num) {
 }
 
 # Define an S4 Object Middle Factory Class
-setClass("mid_fact", slots = list(slot1 = "slot",
+setClass("mid_fac", slots = list(slot1 = "slot",
                                   slot2 = "slot",
                                   slot3 = "slot",
                                   slot4 = "slot",
