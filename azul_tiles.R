@@ -1,16 +1,24 @@
 # Create An S4 Object Tile Class
-setClass("tile", slots = list(color = "character", number = "numeric"))
+setClass("tile", slots = list(color = "character",
+                              color_number = "numeric",
+                              number = "numeric"
+                              )
+         )
 
 # Function To Create a Tile
-create_s4_tile <- function(col, num) {
+create_s4_tile <- function(col, col_num, num) {
   
   # Validate The Tile Information
   if (col %in% c("black", "blue", "cyan", "red", "yellow") && num %in% c(1:20)) {
     
-    values <- new("tile", color = col, number = num)
+    tile <- new("tile",
+                color = col,
+                color_number = col_num,
+                number = num
+                )
     
     # Return Object From Function
-    return(values)
+    return(tile)
     
   } else {
     
@@ -22,4 +30,4 @@ create_s4_tile <- function(col, num) {
 }
 
 # Create an S4 Tile Object
-t <- create_s4_tile(col = "blue", num = 1)
+t <- create_s4_tile(col = "blue", col_num = 1, num = 1)
