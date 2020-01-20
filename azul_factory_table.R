@@ -12,11 +12,22 @@ setClass("factory_table", slots = list(factory1 = "factory",
                                        )
 )
 
-create_s4_factory_table <- function() {
+create_s4_factory_table <- function(factories) {
   
   # Create a Factory Table
   table <- new("factory_table")
   
+  # Put Number of Factories In
+  for (n in c(1:factories)) {
+    
+    f <- create_s4_factory(num = n)
+    
+    slot(table, paste0("factory", n)) <- f
+    
+  }
+  
+  return(table)
+  
 }
 
-test <- create_s4_factory_table()
+test <- create_s4_factory_table(factories = 2)
