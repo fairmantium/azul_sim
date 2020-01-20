@@ -38,7 +38,7 @@ setClass("mid_fac", slots = list(slot1 = "slot",
 # Create an S4 Middle Factory
 create_s4_mid <- function() {
   
-  values <- new("mid_fact")
+  values <- new("mid_fac")
   
   return(values)
   
