@@ -26,6 +26,9 @@ create_s4_factory_table <- function(factories) {
     
   }
   
+  mf <- create_s4_mid()
+  slot(table, "middle") <- mf
+  
   return(table)
   
 }
