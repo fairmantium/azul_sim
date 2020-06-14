@@ -33,4 +33,4 @@ create_s4_factory_table <- function(factories) {
   
 }
 
-test <- create_s4_factory_table(factories = 2)
+test <- create_s4_factory_table(factories = 5)
